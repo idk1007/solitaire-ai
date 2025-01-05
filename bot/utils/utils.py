@@ -1,52 +1,94 @@
+import os
 import time
 import random
 import cv2
 import numpy as np
-import os
+
+# 定义常数
+TEMPLATE_DIR = "templates"  # 模板图片目录
+SCREENSHOT_DIR = "screenshots"  # 截图保存目录
 
 def random_sleep(min_time=0.5, max_time=1.5):
     """
-    隨機等待一段時間，模擬人類操作
+    随机休眠一段时间
+    
+    Args:
+        min_time (float): 最小休眠时间(秒)
+        max_time (float): 最大休眠时间(秒)
     """
     sleep_time = random.uniform(min_time, max_time)
     time.sleep(sleep_time)
 
-def calculate_coordinates(x_percent, y_percent, width=1280, height=720):
+def ensure_dir_exists(directory):
     """
-    將百分比座標轉換為實際座標
+    确保目录存在，如果不存在则创建
+    
+    Args:
+        directory (str): 目录路径
     """
-    x = int(width * x_percent / 100)
-    y = int(height * y_percent / 100)
-    return x, y
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
-def find_template(screenshot, template_path, threshold=0.8):
+def find_template(image, template_path, threshold=0.8):
     """
-    在截圖中查找模板圖片
-    返回最佳匹配位置的中心點座標
+    在图片中查找模板
+    
+    Args:
+        image: 要搜索的图片（numpy数组）
+        template_path: 模板图片的路径
+        threshold: 匹配阈值（0-1之间）
+    
+    Returns:
+        tuple: (中心x坐标, 中心y坐标) 如果找到匹配
+        None: 如果没有找到匹配
     """
+    # 确保模板文件存在
     if not os.path.exists(template_path):
-        print(f"模板圖片不存在: {template_path}")
+        print(f"模板文件不存在: {template_path}")
         return None
-
-    # 讀取圖片
+    
+    # 读取模板图片
     template = cv2.imread(template_path)
-    screenshot = cv2.imread(screenshot)
-
-    if template is None or screenshot is None:
-        print("圖片讀取失敗")
+    if template is None:
+        print(f"无法读取模板图片: {template_path}")
         return None
-
-    # 進行模板匹配
-    result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
+    
+    # 获取模板尺寸
+    h, w = template.shape[:2]
+    
+    # 执行模板匹配
+    result = cv2.matchTemplate(image, template, cv2.TM_CCOEFF_NORMED)
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+    
+    # 如果匹配度超过阈值
+    if max_val >= threshold:
+        # 计算中心点坐标
+        center_x = max_loc[0] + w//2
+        center_y = max_loc[1] + h//2
+        return (center_x, center_y)
+    
+    return None
 
-    if max_val < threshold:
-        print(f"未找到匹配圖片，相似度: {max_val}")
-        return None
+def get_timestamp():
+    """
+    获取当前时间戳字符串
+    
+    Returns:
+        str: 格式化的时间戳字符串
+    """
+    return time.strftime("%Y%m%d_%H%M%S")
 
-    # 計算中心點座標
-    w, h = template.shape[1], template.shape[0]
-    center_x = max_loc[0] + w//2
-    center_y = max_loc[1] + h//2
+def log_message(message, level="INFO"):
+    """
+    记录日志消息
+    
+    Args:
+        message (str): 日志消息
+        level (str): 日志级别
+    """
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{level}] {timestamp} - {message}")
 
-    return (center_x, center_y)
+# 创建必要的目录
+ensure_dir_exists(TEMPLATE_DIR)
+ensure_dir_exists(SCREENSHOT_DIR)
