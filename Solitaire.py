@@ -479,19 +479,24 @@ class SolitaireAI:
         self.batch_size = 1024
         self.target_update = 20
         
+        # 使用新的網絡結構
         self.model = DQN(self.state_size, self.action_size)
         self.target_model = DQN(self.state_size, self.action_size)
         self.target_model.load_state_dict(self.model.state_dict())
-        self.optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate)
-        self.scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-            self.optimizer, 
-            mode='min', 
-            factor=0.1,
-            patience=100,
-            min_lr=1e-5,
-            verbose=True
+        
+        # 使用 AdamW 優化器
+        self.optimizer = optim.AdamW(
+            self.model.parameters(),
+            lr=self.learning_rate,
+            weight_decay=0.01
         )
-        self.criterion = nn.MSELoss()
+        
+        # 使用 CosineAnnealingLR 調度器
+        self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
+            self.optimizer,
+            T_max=1000,
+            eta_min=1e-6
+        )
 
     def remember(self, state, action, reward, next_state, done):
         # 基礎優先級
@@ -691,7 +696,7 @@ class SolitaireAI:
             # episode 結束時更新學習率
             if loss_count > 0:
                 avg_loss = episode_loss / loss_count
-                self.scheduler.step(avg_loss)
+                self.scheduler.step()
                 
             # 記錄並輸出訓練進度
             episode_rewards.append(total_reward)
