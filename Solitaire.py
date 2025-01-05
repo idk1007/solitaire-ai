@@ -355,56 +355,115 @@ class SolitaireEnv:
             done = True
             
         return self._get_state(), reward, done
+    
+        # 增加連續成功的獎勵
+        if foundation_progress > 0:
+            reward += foundation_progress * 3.0  # 增加基礎獎勵
+            
+        # 增加完成特定目標的獎勵
+        if current_foundation_cards >= 13:  # 完成一組
+            reward += 10.0
+            
+        # 懲罰無效的循環
+        if moves > 100 and foundation_progress == 0:
+            reward -= 0.5 * (moves - 100) / 100
 
 class DQN(nn.Module):
     def __init__(self, input_size, output_size):
         super(DQN, self).__init__()
-        # 使用更深的網絡結構
-        self.fc1 = nn.Linear(input_size, 512)
-        self.ln1 = nn.LayerNorm(512)
-        self.fc2 = nn.Linear(512, 384)
-        self.ln2 = nn.LayerNorm(384)
-        self.fc3 = nn.Linear(384, 256)
+        
+        # 主幹網絡
+        self.fc1 = nn.Linear(input_size, 1024)
+        self.ln1 = nn.LayerNorm(1024)
+        self.fc2 = nn.Linear(1024, 512)
+        self.ln2 = nn.LayerNorm(512)
+        self.fc3 = nn.Linear(512, 256)
         self.ln3 = nn.LayerNorm(256)
+        
+        # 殘差連接
+        self.residual1 = nn.Linear(input_size, 512)
+        self.residual2 = nn.Linear(512, 256)
+        
+        # 注意力機制
+        self.attention = nn.MultiheadAttention(256, num_heads=4, batch_first=True)
+        
+        # 輸出層
         self.fc4 = nn.Linear(256, 128)
         self.ln4 = nn.LayerNorm(128)
         self.fc5 = nn.Linear(128, output_size)
         
-        # 降低 dropout 率
-        self.dropout = nn.Dropout(0.05)
+        # 降低 dropout 率但增加位置
+        self.dropout1 = nn.Dropout(0.1)
+        self.dropout2 = nn.Dropout(0.1)
+        self.dropout3 = nn.Dropout(0.1)
         
-        # 使用 Xavier 初始化
+        # 使用 GELU 激活函數
+        self.gelu = nn.GELU()
+        
+        # 初始化權重
+        self._initialize_weights()
+    
+    def _initialize_weights(self):
         for m in self.modules():
             if isinstance(m, nn.Linear):
-                nn.init.xavier_uniform_(m.weight)
-                nn.init.constant_(m.bias, 0)
+                # 使用 Kaiming 初始化
+                nn.init.kaiming_normal_(m.weight, nonlinearity='relu')
+                if m.bias is not None:
+                    nn.init.constant_(m.bias, 0)
     
     def forward(self, x, training=False):
+        # 主幹網絡前向傳播
+        identity = x
+        
         x = self.fc1(x)
         x = self.ln1(x)
-        x = torch.relu(x)
+        x = self.gelu(x)
         if training:
-            x = self.dropout(x)
+            x = self.dropout1(x)
         
         x = self.fc2(x)
         x = self.ln2(x)
-        x = torch.relu(x)
+        x = self.gelu(x)
+        
+        # 第一個殘差連接
+        residual = self.residual1(identity)
+        x = x + residual
+        
         if training:
-            x = self.dropout(x)
+            x = self.dropout2(x)
         
         x = self.fc3(x)
         x = self.ln3(x)
-        x = torch.relu(x)
+        x = self.gelu(x)
+        
+        # 第二個殘差連接
+        residual = self.residual2(residual)
+        x = x + residual
+        
+        # 注意力機制
+        # 重塑張量以適應注意力層
+        batch_size = x.size(0)
+        x = x.view(batch_size, 1, -1)  # [batch_size, 1, features]
+        x, _ = self.attention(x, x, x)
+        x = x.squeeze(1)  # [batch_size, features]
+        
         if training:
-            x = self.dropout(x)
-            
+            x = self.dropout3(x)
+        
+        # 輸出層
         x = self.fc4(x)
         x = self.ln4(x)
-        x = torch.relu(x)
-        if training:
-            x = self.dropout(x)
+        x = self.gelu(x)
+        x = self.fc5(x)
         
-        return self.fc5(x)
+        return x
+
+    def get_attention_weights(self, x):
+        """獲取注意力權重用於可視化"""
+        batch_size = x.size(0)
+        x = x.view(batch_size, 1, -1)
+        _, weights = self.attention(x, x, x, need_weights=True)
+        return weights
 
 class SolitaireAI:
     def __init__(self):
@@ -414,11 +473,11 @@ class SolitaireAI:
         self.memory = deque(maxlen=10000)
         self.gamma = 0.99
         self.epsilon = 1.0
-        self.epsilon_min = 0.1
-        self.epsilon_decay = 0.9998
-        self.learning_rate = 0.0005
-        self.batch_size = 512
-        self.target_update = 10
+        self.epsilon_min = 0.05
+        self.epsilon_decay = 0.9995
+        self.learning_rate = 0.0003
+        self.batch_size = 1024
+        self.target_update = 20
         
         self.model = DQN(self.state_size, self.action_size)
         self.target_model = DQN(self.state_size, self.action_size)
@@ -437,17 +496,25 @@ class SolitaireAI:
     def remember(self, state, action, reward, next_state, done):
         # 基礎優先級
         priority = abs(reward) + 1.0
+        # 增加優先級計算
+        priority = abs(reward) + 1.0
         
         # 根據動作類型調整優先級
         if action[0] == 'tableau' and action[3] == 'foundation':
             priority *= 1.3
         elif action[0] == 'waste' and action[1] == 'foundation':
             priority *= 1.2
+        # 根據foundation進展增加優先級
+        if action[0] == 'tableau' and action[3] == 'foundation':
+            priority *= 2.0  # 增加權重
 
         # 添加時間衰減因子
         if len(self.memory) > 0:
             oldest_priority = self.memory[0][5]
             priority *= 0.99  # 輕微的時間衰減
+        # 增加成功序列的優先級
+        if reward > 5:  # 表示有重要進展
+            priority *= 1.5
         
         self.memory.append((state, action, reward, next_state, done, priority))
     
@@ -669,6 +736,14 @@ class SolitaireAI:
                 print(f"Training completed early at episode {episode + 1}")
                 print(f"Reason: No improvement for too long")
                 break
+            # 增加早期停止條件
+            patience = 200  # 增加耐心值
+            min_delta = 0.01  # 最小改進閾值
+
+            # 動態調整學習率
+            if no_improvement_count > 100:
+                self.learning_rate *= 0.5
+                print(f"Reducing learning rate to {self.learning_rate}")
         
         print("\nTraining finished.")
         print(f"Best reward achieved: {best_reward}")
@@ -713,7 +788,7 @@ class SolitaireAI:
         foundation_cards_list = []
         
         original_epsilon = self.epsilon
-        self.epsilon = 0.05  # 在評估時使用較小的探索率
+        self.epsilon = 0.01  # 在評估時使用較小的探索率
         
         for episode in range(num_episodes):
             state = self.env.reset()
@@ -734,7 +809,7 @@ class SolitaireAI:
                     win_count += 1
                     break
                     
-                if moves >= 1000:  # 設置最大移動次數
+                if moves >= 2000:  # 設置最大移動次數
                     break
             
             rewards.append(total_reward)
@@ -819,7 +894,7 @@ if __name__ == "__main__":
     
     # 開始訓練
     try:
-        rewards = ai.train(1000, checkpoint_interval=50, checkpoint_dir=f"{save_dir}/checkpoints")
+        rewards = ai.train(1000, checkpoint_interval=30, checkpoint_dir=f"{save_dir}/checkpoints")
         
         # 保存最終模型
         ai.save_model(f"{save_dir}/final_model.pt")
