@@ -1,0 +1,5 @@
+Final Evaluation Results:
+avg_reward: 3179.428999999991
+avg_moves: 2000.0
+avg_foundation: 5.38
+win_rate: 0.0

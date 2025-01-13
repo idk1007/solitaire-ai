@@ -70,56 +70,70 @@ def handle_test_connection(game):
     else:
         print("連接測試失敗")
 
+def clear_screen():
+        """
+        清除終端畫面
+        根據作業系統使用不同的清屏指令
+        """
+        if sys.platform.startswith('win'):  # Windows
+            os.system('cls')
+        else:  # Mac/Linux
+            os.system('clear')
+        pass
+
+def print_banner():
+    # ... 保留現有的 print_banner 函數 ...
+    pass
+
+# 用新版本替換原有的 main 函數
 def main():
-    # 清除終端
-    os.system('cls' if os.name == 'nt' else 'clear')
-    
-    # 顯示程式橫幅
-    print_banner()
-    
-    # 創建遊戲處理器實例
-    game = GameHandler()
-    
-    while True:
-        print_menu()
-        choice = input("請輸入選項: ").strip()
+    print("程序开始执行...")  # 调试输出
+    try:
+        game = GameHandler()
+        print("GameHandler 已创建")  # 调试输出
         
-        if choice == '0':
-            print("\n感謝使用，程式結束")
-            break
-            
-        elif choice == '1':
-            if game.start():
-                try:
-                    handle_auto_play(game)
-                finally:
-                    game.stop()
-            else:
-                print("無法連接到模擬器，請檢查模擬器是否正常運行")
+        if game.start():
+            try:
+                # 添加測試選項
+                print("\n請選擇操作：")
+                print("1. 開始正常遊戲")
+                print("2. 測試撲克牌識別")
+                choice = input("請輸入選項（1或2）: ").strip()
                 
-        elif choice == '2':
-            if game.start():
-                try:
-                    handle_screenshot(game)
-                finally:
-                    game.stop()
-            else:
-                print("無法連接到模擬器，請檢查模擬器是否正常運行")
+                if choice == "1":
+                    # 原有的遊戲流程
+                    game.handle_permission_dialog()
+                    time.sleep(1)
+                    game.start_game()
+                    time.sleep(2)
+                    game.play_game()
+                elif choice == "2":
+                    # 執行測試
+                    game.test_card_detection()
+                else:
+                    print("無效的選項！")
                 
-        elif choice == '3':
-            handle_test_connection(game)
-            
+            except Exception as e:
+                print(f"执行过程中发生错误: {str(e)}")
+            finally:
+                game.stop()
         else:
-            print("無效的選項，請重新選擇")
-        
-        print("\n按 Enter 鍵繼續...")
-        input()
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print_banner()
+            print("游戏处理器启动失败")
+    except Exception as e:
+        print(f"程序执行过程中发生错误: {str(e)}")
+
+
 
 if __name__ == "__main__":
+    clear_screen()
+    print_banner()
+    
     try:
-        main()
+        game = GameHandler()
+        if game.start():
+            # 執行測試
+            game.test_card_detection()
+        game.stop()
     except KeyboardInterrupt:
         print("\n\n程式被使用者中斷")
     except Exception as e:

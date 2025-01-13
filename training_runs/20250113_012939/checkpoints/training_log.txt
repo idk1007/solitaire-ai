@@ -1,0 +1,37 @@
+Training started at: 2025-01-13 01:29:39.518891
+Training configuration:
+Episodes: 1000
+Checkpoint interval: 50
+Checkpoint directory: training_runs/20250113_012939\checkpoints
+Initial epsilon: 1.0
+Learning rate: 0.0005
+==================================================
+Will record episode 0
+
+Starting recorded episode...
+
+==================================================
+Foundation:
+0: 
+1: 
+2: 
+3: 
+
+--------------------------------------------------
+Tableau:
+0: ♣A 
+1: 🂠 ♥3 
+2: 🂠 🂠 ♠10 
+3: 🂠 🂠 🂠 ♣3 
+4: 🂠 🂠 🂠 🂠 ♦7 
+5: 🂠 🂠 🂠 🂠 🂠 ♣4 
+6: 🂠 🂠 🂠 🂠 🂠 🂠 ♠3 
+
+--------------------------------------------------
+Waste: 
+Stock: 24 cards
+==================================================
+
+Target network updated at episode 0
+
+Training Error: name 'prev_valid_moves' is not defined
