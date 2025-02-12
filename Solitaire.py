@@ -27,38 +27,75 @@ class Card:
 
 class SolitaireEnv:
     def __init__(self):
-        """初始化接龍環境"""
-        tableau_size = 7 * 13 * 3     # 7列，每列最多13張牌，每張牌3個特徵 = 273
-        foundation_size = 4 * 3       # 4個基礎堆，每堆頂部牌3個特徵 = 12
-        waste_size = 1 * 3           # 廢牌堆頂部1張牌，3個特徵 = 3
-        stock_size = 1               # 股票堆大小信息 = 1
-        hidden_cards_size = 52 * 3   # 所有隱藏牌的信息 = 156
+        """初始化紙牌遊戲環境"""
+        self.tableau = []      # 主要遊戲區域
+        self.foundation = []   # 基礎區（用於收集同花色的牌）
+        self.stock = []        # 抽牌堆
+        self.waste = []        # 廢牌堆
+        self.hidden_cards = {} # 記錄被蓋住的牌
+        self.move_history = [] # 移動歷史
+        self.moves_without_progress = 0  # 無進展的移動次數
         
-        self.state_size = 445  # 更新為實際計算出的大小
-        
-        # 初始化其他屬性
-        self.tableau = [[] for _ in range(7)]
-        self.foundation = [[] for _ in range(4)]
-        self.stock = []
-        self.waste = []
-        self.move_history = []
-        self.hidden_cards = {}
-        self.moves_without_progress = 0
-        self.history = []
+        # 初始化foundation區域
+        for _ in range(4):
+            self.foundation.append([])
+            
+        # 初始化tableau區域
+        for _ in range(7):
+            self.tableau.append([])
+        pass
 
-    def _can_move_to_foundation(self, card, foundation_index):
-        """檢查牌是否可以移動到指定的foundation堆"""
-        dest_pile = self.foundation[foundation_index]
+    def _can_move_to_tableau(self, card, dest_pile):
+            """檢查是否可以將牌移動到tableau堆"""
+            if not dest_pile:  # 如果目標堆為空
+                return card.rank == 'K'  # 只有K可以放在空堆
+            
+            dest_card = dest_pile[-1]
+            if not dest_card.is_face_up:
+                return False
+                
+            # 檢查顏色是否相反
+            card_color = 'red' if card.suit in ['♥', '♦'] else 'black'
+            dest_color = 'red' if dest_card.suit in ['♥', '♦'] else 'black'
+            
+            if card_color == dest_color:
+                return False
+                
+            # 檢查數值是否連續
+            card_value = self._get_card_value(card.rank)
+            dest_value = self._get_card_value(dest_card.rank)
+            
+            return card_value == dest_value - 1
+
+    def _can_move_to_foundation(self, card, foundation_pile):
+        """檢查是否可以將牌移動到foundation堆"""
+        if not foundation_pile:  # 如果foundation為空
+            return card.rank == 'A'  # 只有A可以作為foundation的第一張
         
-        # 如果foundation為空，只能放A
-        if not dest_pile:
-            return card.rank == 'A'
-        
-        # 檢查是否同花色且順序正確
-        top_card = dest_pile[-1]
+        top_card = foundation_pile[-1]
+        # 檢查花色是否相同且數值是否連續
         return (card.suit == top_card.suit and 
-                RANKS.index(card.rank) == RANKS.index(top_card.rank) + 1)
+                self._get_card_value(card.rank) == self._get_card_value(top_card.rank) + 1)
 
+    def _get_card_value(self, rank):
+        """獲取牌的數值"""
+        values = {
+            'A': 1,
+            '2': 2,
+            '3': 3,
+            '4': 4,
+            '5': 5,
+            '6': 6,
+            '7': 7,
+            '8': 8,
+            '9': 9,
+            '10': 10,
+            'J': 11,
+            'Q': 12,
+            'K': 13
+        }
+        return values[str(rank)]  
+    
     def save_decision_point(self):
         """保存當前狀態作為決策點"""
         current_state = GameState()
@@ -119,147 +156,121 @@ class SolitaireEnv:
     # 在 SolitaireEnv 的 reset 方法中
     def reset(self, custom_deck=None):
         """重置遊戲狀態"""
-        # 初始化各個牌堆
+        # 清空所有區域
         self.tableau = [[] for _ in range(7)]
         self.foundation = [[] for _ in range(4)]
         self.stock = []
         self.waste = []
-        self.move_history = []
         self.hidden_cards = {}
+        self.move_history = []
         self.moves_without_progress = 0
         
+        # 創建並洗牌
         if custom_deck:
-            # 使用自定義牌組
-            deck = []
-            for suit, rank in custom_deck:
-                card = Card(suit, rank)
-                deck.append(card)
-            
-            # 按列發牌（從左到右，每列從上到下）
-            card_index = 0
-            for col in range(7):  # 7列
-                for row in range(col + 1):  # 每列的牌數
-                    if card_index >= len(deck):
-                        print(f"Warning: Not enough cards in custom deck")
-                        break
-                    card = deck[card_index]
-                    # 只有最後一張牌正面朝上
-                    card.is_face_up = (row == col)
-                    self.tableau[col].append(card)
-                    if not card.is_face_up:
-                        self.hidden_cards[(col, row)] = (card.suit, card.rank)
-                    card_index += 1
-            
-            # 剩餘的牌放入stock
-            self.stock = deck[card_index:]
-            
-            # 驗證發牌結果
-            print("\nVerifying tableau distribution:")
-            for i, pile in enumerate(self.tableau):
-                print(f"Column {i} ({len(pile)} cards): ", end="")
-                for card in pile:
-                    if card.is_face_up:
-                        print(f"{card.suit}{card.rank}* ", end="")
-                    else:
-                        print(f"{card.suit}{card.rank} ", end="")
-                print()
-            
-            print(f"\nStock ({len(self.stock)} cards): ", end="")
-            for card in self.stock:
-                print(f"{card.suit}{card.rank} ", end="")
-            print("\n")
-            
+            deck = [Card(suit, rank) for suit, rank in custom_deck]
         else:
-            # 創建並洗牌標準52張牌
-            deck = []
-            for suit in ['♠', '♥', '♦', '♣']:
-                for rank in ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']:
-                    card = Card(suit, rank)
-                    deck.append(card)
-            
+            deck = self._create_deck()
             random.shuffle(deck)
-            
-            # 按列發牌
-            card_index = 0
-            for col in range(7):
-                for row in range(col + 1):
-                    card = deck[card_index]
-                    card.is_face_up = (row == col)
-                    self.tableau[col].append(card)
-                    if not card.is_face_up:
-                        self.hidden_cards[(col, row)] = (card.suit, card.rank)
-                    card_index += 1
-            
-            # 剩餘的牌放入stock
-            self.stock = deck[card_index:]
         
-        # 返回初始狀態
+        # 發牌到tableau
+        card_idx = 0
+        for i in range(7):
+            for j in range(i + 1):
+                card = deck[card_idx]
+                card.is_face_up = (j == i)  # 只有最後一張牌朝上
+                self.tableau[i].append(card)
+                if not card.is_face_up:
+                    self.hidden_cards[(i, j)] = (card.suit, card.rank)
+                card_idx += 1
+        
+        # 剩餘的牌放入stock
+        self.stock = deck[card_idx:]
+        
+        # 獲取初始狀態
         initial_state = self._get_state()
-        return initial_state, {}
+        
+        return initial_state
+    
+    def _create_deck(self):
+        """創建一副標準的52張撲克牌"""
+        deck = []
+        for suit in "♠♥♦♣":
+            for rank in ['A'] + [str(i) for i in range(2, 11)] + ['J', 'Q', 'K']:
+                deck.append(Card(suit, rank))
+        return deck
     
     def _get_state(self):
         """獲取當前遊戲狀態的向量表示"""
-        state = []
+        # 初始化一個固定大小的numpy數組
+        state = np.zeros(445, dtype=np.float32)
         
-        # Tableau 狀態 (273 = 7 piles * 13 cards * 3 features)
-        for pile in self.tableau:
-            pile_state = []
-            for i in range(13):  # 最多13張牌
-                if i < len(pile):
-                    card = pile[i]
-                    # 每張牌用3個值表示：花色(4種)、點數(13種)、是否朝上
-                    pile_state.extend([
-                        ['♠', '♥', '♦', '♣'].index(card.suit) / 3,
-                        RANKS.index(card.rank) / 12,
-                        1.0 if card.is_face_up else 0.0
-                    ])
-                else:
-                    pile_state.extend([0, 0, 0])  # 空位置
-            state.extend(pile_state)
+        # 編碼tableau (273 = 7 piles * 13 cards * 3 features)
+        idx = 0
+        for pile_idx in range(7):  # 7個牌堆
+            pile = self.tableau[pile_idx] if pile_idx < len(self.tableau) else []
+            for card_idx in range(13):  # 每堆最多13張牌
+                if card_idx < len(pile):
+                    card = pile[card_idx]
+                    # 花色 (0-3)
+                    state[idx] = "♠♥♦♣".index(card.suit) / 3.0
+                    # 數值 (0-12)
+                    state[idx + 1] = RANKS.index(card.rank) / 12.0
+                    # 是否朝上 (0/1)
+                    state[idx + 2] = float(card.is_face_up)
+                # 如果沒有牌，保持為0
+                idx += 3
         
-        # Foundation 狀態 (12 = 4 piles * 3 features)
-        for pile in self.foundation:
+        # 編碼foundation (12 = 4 piles * 3 features)
+        for pile_idx in range(4):
+            pile = self.foundation[pile_idx] if pile_idx < len(self.foundation) else []
             if pile:
                 top_card = pile[-1]
-                state.extend([
-                    ['♠', '♥', '♦', '♣'].index(top_card.suit) / 3,
-                    RANKS.index(top_card.rank) / 12,
-                    len(pile) / 13
-                ])
-            else:
-                state.extend([0, 0, 0])
+                state[idx] = "♠♥♦♣".index(top_card.suit) / 3.0
+                state[idx + 1] = RANKS.index(top_card.rank) / 12.0
+                state[idx + 2] = 1.0  # foundation中的牌總是朝上
+            idx += 3
         
-        # Waste 狀態 (3 features)
+        # 編碼waste (3 features)
         if self.waste:
             top_card = self.waste[-1]
-            state.extend([
-                ['♠', '♥', '♦', '♣'].index(top_card.suit) / 3,
-                RANKS.index(top_card.rank) / 12,
-                1.0
-            ])
-        else:
-            state.extend([0, 0, 0])
+            state[idx] = "♠♥♦♣".index(top_card.suit) / 3.0
+            state[idx + 1] = RANKS.index(top_card.rank) / 12.0
+            state[idx + 2] = 1.0
+        idx += 3
         
-        # Stock 狀態 (1 feature)
-        state.append(len(self.stock) / 24)  # 標準化
+        # 編碼stock size (1 feature)
+        state[idx] = len(self.stock) / 24.0  # 正規化到0-1之間
+        idx += 1
         
-        # Hidden cards 信息 (156 = 4 suits * 13 ranks * 3 features)
-        hidden_state = np.zeros(156)
-        for (pile_idx, card_idx), (suit, rank) in self.hidden_cards.items():
-            base_idx = (RANKS.index(rank) * 4 + ['♠', '♥', '♦', '♣'].index(suit)) * 3
-            hidden_state[base_idx:base_idx+3] = [
-                ['♠', '♥', '♦', '♣'].index(suit) / 3,
-                RANKS.index(rank) / 12,
-                1.0
-            ]
-        state.extend(hidden_state)
+        # 編碼hidden cards (156 = 4 suits * 13 ranks * 3 features)
+        for suit in "♠♥♦♣":
+            for rank in RANKS:
+                card_count = self._count_hidden_cards(suit, rank)
+                state[idx] = card_count / 4.0  # 最多4張同樣的牌
+                idx += 1
         
-        # 確保狀態向量大小正確
-        state_array = np.array(state, dtype=np.float32)
-        assert len(state_array) == 445, f"State size mismatch: got {len(state_array)}, expected 445"
-        
-        return state_array
+        return state
     
+    def _count_hidden_cards(self, suit, rank):
+        """計算特定花色和數值的未知牌的數量"""
+        total = 1  # 每種牌只有一張
+        
+        # 檢查所有可見的牌
+        for pile in self.tableau:
+            for card in pile:
+                if card.is_face_up and card.suit == suit and card.rank == rank:
+                    total -= 1
+        
+        for pile in self.foundation:
+            for card in pile:
+                if card.suit == suit and card.rank == rank:
+                    total -= 1
+        
+        if self.waste and self.waste[-1].suit == suit and self.waste[-1].rank == rank:
+            total -= 1
+        
+        return max(0, total)
+
     def _is_valid_move(self, card, dest_type, dest_pile):
         """檢查移動是否有效"""
         if dest_type == 'foundation':
@@ -290,53 +301,50 @@ class SolitaireEnv:
                 (suit1 in ['♠', '♣'] and suit2 in ['♥', '♦']))
     
     def get_valid_moves(self):
+        """獲取所有有效的移動"""
         valid_moves = []
         
-        # 檢查tableau到foundation的移動
-        for i, source_pile in enumerate(self.tableau):
-            if source_pile:
-                card = source_pile[-1]
-                if card.is_face_up:
-                    for j in range(4):  # 檢查所有foundation堆
-                        if self._can_move_to_foundation(card, j):
-                            valid_moves.append(('tableau', i, len(source_pile)-1, 'foundation', j))
-
-        # 從waste到tableau或foundation的移動
+        # 檢查從stock到waste的移動
+        if self.stock:
+            valid_moves.append(('stock', None))
+        elif self.waste:  # 如果stock為空但waste不為空
+            valid_moves.append(('reset', None))
+        
+        # 檢查從waste到foundation或tableau的移動
         if self.waste:
             card = self.waste[-1]
-            # 檢查到tableau的移動
-            for i in range(7):
-                if self._is_valid_move(card, 'tableau', self.tableau[i]):
-                    valid_moves.append(('waste', 'tableau', i))
-            # 檢查到foundation的移動
-            for i in range(4):
-                if self._is_valid_move(card, 'foundation', self.foundation[i]):
+            # 檢查waste到foundation
+            for i, pile in enumerate(self.foundation):
+                if self._can_move_to_foundation(card, pile):
                     valid_moves.append(('waste', 'foundation', i))
-        
-        # 從tableau到tableau或foundation的移動
-        for i in range(7):
-            if not self.tableau[i]:
-                continue
-            for j in range(len(self.tableau[i])):
-                if not self.tableau[i][j].is_face_up:
-                    continue
-                card = self.tableau[i][j]
-                # 檢查到其他tableau列的移動
-                for k in range(7):
-                    if k != i and self._is_valid_move(card, 'tableau', self.tableau[k]):
-                        valid_moves.append(('tableau', i, j, 'tableau', k))
-                # 檢查到foundation的移動
-                if j == len(self.tableau[i]) - 1:  # 只能移動頂牌到foundation
-                    for k in range(4):
-                        if self._is_valid_move(card, 'foundation', self.foundation[k]):
-                            valid_moves.append(('tableau', i, j, 'foundation', k))
-        
-        # 翻stock牌的操作
-        if self.stock:
-            valid_moves.append(('stock', 'waste'))
-        elif self.waste:  # stock空時可以將waste重置
-            valid_moves.append(('reset',))
             
+            # 檢查waste到tableau
+            for j, pile in enumerate(self.tableau):
+                if self._can_move_to_tableau(card, pile):
+                    valid_moves.append(('waste', 'tableau', j))
+        
+        # 檢查tableau內部的移動
+        for i, source_pile in enumerate(self.tableau):
+            if not source_pile:
+                continue
+                
+            # 找到第一張朝上的牌
+            for k, card in enumerate(source_pile):
+                if not card.is_face_up:
+                    continue
+                    
+                # 檢查到foundation的移動
+                if k == len(source_pile) - 1:  # 只能移動頂部的牌到foundation
+                    for j, foundation_pile in enumerate(self.foundation):
+                        if self._can_move_to_foundation(card, foundation_pile):
+                            valid_moves.append(('tableau', i, k, 'foundation', j))
+                
+                # 檢查到其他tableau堆的移動
+                for j, dest_pile in enumerate(self.tableau):
+                    if i != j:  # 不能移動到同一堆
+                        if self._can_move_to_tableau(card, dest_pile):
+                            valid_moves.append(('tableau', i, k, 'tableau', j))
+        
         return valid_moves
     
     def _calculate_card_value(self, suit, rank):
@@ -427,102 +435,89 @@ class SolitaireEnv:
         return True
 
     def _update_hidden_cards(self):
-        """更新蓋住的牌的信息"""
-        new_hidden_cards = {}
+        """更新被蓋住的牌的信息"""
+        self.hidden_cards = {}
         for i, pile in enumerate(self.tableau):
             for j, card in enumerate(pile):
                 if not card.is_face_up:
-                    new_hidden_cards[(i, j)] = (card.suit, card.rank)
-        self.hidden_cards = new_hidden_cards
+                    self.hidden_cards[(i, j)] = (card.suit, card.rank)
 
     def step(self, action):
-        """執行一個動作並返回新狀態、獎勵和是否結束"""
-        # 保存當前狀態
-        self._save_state()
-        prev_valid_moves = len(self.get_valid_moves())
-        prev_foundation_cards = sum(len(pile) for pile in self.foundation)
-        prev_face_up_cards = sum(1 for pile in self.tableau for card in pile if card.is_face_up)
+        """執行一步移動
         
-        # 初始化獎勵和結束標誌
+        Args:
+            action: 移動動作的元組
+            
+        Returns:
+            tuple: (新狀態, 獎勵, 是否結束)
+        """
         reward = 0
         done = False
         
+        # 記錄移動前的狀態
+        prev_foundation_cards = sum(len(pile) for pile in self.foundation)
+        prev_face_up_cards = sum(1 for pile in self.tableau for card in pile if card.is_face_up)
+        prev_valid_moves = len(self.get_valid_moves())
+        
+        # 根據動作類型執行相應的移動
         if action[0] == 'stock':
-            # 從stock翻牌到waste
+            # 從stock移動一張牌到waste
             if self.stock:
                 card = self.stock.pop()
                 card.is_face_up = True
                 self.waste.append(card)
-                reward = 0.1  # 小獎勵
-            else:
-                # 如果stock空了，但waste有牌，重置
-                if self.waste:
-                    self.stock = self.waste[::-1]  # 反轉waste
-                    for card in self.stock:
-                        card.is_face_up = False
-                    self.waste = []
-                    reward = -0.2  # 小懲罰
-                else:
-                    reward = -0.5  # 較大懲罰
-
-        if action[0] == 'tableau' and action[3] == 'foundation':
-            # 從tableau移到foundation
-            source_pile = self.tableau[action[1]]
-            if len(source_pile) > action[2]:  # 確保有足夠的牌
-                card = source_pile[action[2]]
-                if card.is_face_up:  # 確保牌是朝上的
-                    dest_pile = self.foundation[action[4]]
-                    if self._is_valid_move(card, 'foundation', dest_pile):
-                        # 移動牌
-                        dest_pile.append(source_pile.pop(action[2]))
-                        reward = 2.0  # 成功移到foundation的獎勵
-                        
-                        # 如果移動後露出新牌，翻開它
-                        if source_pile and not source_pile[-1].is_face_up:
-                            source_pile[-1].is_face_up = True
-                            if (action[1], len(source_pile)-1) in self.hidden_cards:
-                                del self.hidden_cards[(action[1], len(source_pile)-1)]
-                            reward += 1.0
-                    else:
-                        reward = -1.0  # 無效移動的懲罰
+            reward -= 0.1  # 小的負獎勵以鼓勵更有效的移動
             
         elif action[0] == 'reset':
-            # 重置waste到stock
-            self.stock = list(reversed(self.waste))
-            self.waste = []
-            for card in self.stock:
-                card.is_face_up = False
-            reward = -0.2
+            # 將waste重置回stock
+            if not self.stock and self.waste:
+                self.stock = self.waste[::-1]  # 反轉waste
+                self.waste = []
+                for card in self.stock:
+                    card.is_face_up = False
+            reward -= 0.5  # 較大的負獎勵以避免過多的重置
             
         elif action[0] == 'waste':
             card = self.waste.pop()
-            if action[1] == 'tableau':
-                self.tableau[action[2]].append(card)
-                reward = 1.0
-            else:  # foundation
+            if action[1] == 'foundation':
                 self.foundation[action[2]].append(card)
-                reward = 2.0
+                reward += 2.0  # 放到foundation的獎勵
+            else:  # tableau
+                self.tableau[action[2]].append(card)
+                reward += 0.5  # 放到tableau的獎勵
                 
         elif action[0] == 'tableau':
             source_pile = self.tableau[action[1]]
             cards_to_move = source_pile[action[2]:]
-            if action[3] == 'tableau':
-                # 檢查是否是無意義的移動
-                if self._is_meaningless_move(source_pile, action[2], self.tableau[action[4]]):
-                    reward = -1.0  # 加大懲罰
-                else:
-                    reward = 0.5
-                    
-                self.tableau[action[4]].extend(cards_to_move)
-                del source_pile[action[2]:]
             
-            # 翻開移動後露出的牌
-            if source_pile and not source_pile[-1].is_face_up:
-                source_pile[-1].is_face_up = True
-                # 更新hidden_cards
-                if (action[1], len(source_pile)-1) in self.hidden_cards:
-                    del self.hidden_cards[(action[1], len(source_pile)-1)]
-                reward += 1.0
+            if action[3] == 'foundation':
+                # 移動到foundation
+                card = source_pile.pop()
+                self.foundation[action[4]].append(card)
+                reward += 2.0
+                
+                # 如果移動後露出了新牌，翻開它
+                if source_pile and not source_pile[-1].is_face_up:
+                    source_pile[-1].is_face_up = True
+                    # 從hidden_cards中移除這張牌
+                    if (action[1], len(source_pile)-1) in self.hidden_cards:
+                        del self.hidden_cards[(action[1], len(source_pile)-1)]
+                    reward += 1.0
+                    
+            else:  # tableau到tableau
+                # 移動到其他tableau堆
+                dest_pile = self.tableau[action[4]]
+                for card in cards_to_move:
+                    source_pile.pop()
+                    dest_pile.append(card)
+                
+                # 如果移動後露出了新牌，翻開它
+                if source_pile and not source_pile[-1].is_face_up:
+                    source_pile[-1].is_face_up = True
+                    # 從hidden_cards中移除這張牌
+                    if (action[1], len(source_pile)-1) in self.hidden_cards:
+                        del self.hidden_cards[(action[1], len(source_pile)-1)]
+                    reward += 1.0
         
         # 更新hidden_cards
         self._update_hidden_cards()
@@ -530,61 +525,27 @@ class SolitaireEnv:
         # 保持歷史記錄在合理範圍內
         if len(self.move_history) > 100:
             self.move_history.pop(0)
-
+            
         # 計算進展獎勵
         current_valid_moves = len(self.get_valid_moves())
         moves_diff = current_valid_moves - prev_valid_moves
         
         if moves_diff > 0:
             reward += moves_diff * 0.2
-        
+            
         current_foundation_cards = sum(len(pile) for pile in self.foundation)
         current_face_up_cards = sum(1 for pile in self.tableau for card in pile if card.is_face_up)
-                
-        # 檢查是否有連續的foundation牌
-        for i in range(4):
-            if len(self.foundation[i]) >= 2:
-                reward += len(self.foundation[i]) * 0.5
-
-        # 額外的進展獎勵
-        foundation_progress = current_foundation_cards - prev_foundation_cards
-        face_up_progress = current_face_up_cards - prev_face_up_cards
         
-        reward += foundation_progress * 2.0
-        reward += face_up_progress * 0.5
-        
-        # 根據hidden_cards的信息調整獎勵
-        for pos, (suit, rank) in self.hidden_cards.items():
-            value = self._calculate_card_value(suit, rank)
-            if value > 0.7:  # 如果是高價值的牌還被蓋著
-                reward -= 0.1  # 輕微懲罰
-            
-        # 增加連續成功的獎勵
-        if foundation_progress > 0:
-            reward += foundation_progress * 3.0  # 增加基礎獎勵
-            # 重置無效循環計數器
-            self.moves_without_progress = 0
-        
-        else:
-            # 增加無效循環計數器
-            self.moves_without_progress += 1
-            
-        # 懲罰無效循環
-        if self.moves_without_progress > 20:  # 如果連續20步沒有進展
-            reward -= 0.1 * (self.moves_without_progress - 20)  # 逐步增加懲罰
-            
-        if self.moves_without_progress > 50:  # 如果連續50步沒有進展
-            reward -= 0.2 * (self.moves_without_progress - 50)  # 進一步增加懲罰
-                                    
         # 檢查是否獲勝
         if all(len(pile) == 13 for pile in self.foundation):
             reward = 50
             done = True
-        
+            
         # 獲取新狀態
         new_state = self._get_state()
-
+        
         return new_state, reward, done
+
 
     def _is_useful_card(self, card):
         """檢查一張牌是否當前有用"""
@@ -605,39 +566,50 @@ class SolitaireEnv:
         
         return False
 
-    def _will_unlock_useful_sequence(self, card, tableau_idx):
-        """檢查這張牌是否能幫助解鎖有用的序列"""
-        # 例如:如果這張牌是紅心5,檢查是否有黑桃4或梅花4等待它
-        target_rank = RANKS[RANKS.index(card.rank) - 1]
-        target_suits = ['♠', '♣'] if card.suit in ['♥', '♦'] else ['♥', '♦']
-        
-        for pile in self.tableau:
-            if pile and pile[-1].is_face_up:
-                if (pile[-1].rank == target_rank and 
-                    pile[-1].suit in target_suits):
-                    return True
-        return False
-    
     def _is_meaningless_move(self, source_pile, start_idx, dest_pile):
         """檢查是否是無意義的移動"""
-        # 如果目標堆是空的,但移動的不是K,就是無意義的
-        if not dest_pile and source_pile[start_idx].rank != 'K':
-            return True
-            
-        # 如果移動後會露出新牌,則不是無意義的
-        if start_idx > 0 and not source_pile[start_idx-1].is_face_up:
-            return False
-            
-        # 如果這個移動會讓其他有用的移動成為可能,則不是無意義的
-        if self._enables_useful_moves(source_pile[start_idx:], dest_pile):
-            return False
-            
-        # 檢查是否只是在兩堆之間來回移動
-        if len(self.move_history) >= 4:
-            last_moves = self.move_history[-4:]
-            if self._is_cycling_moves(last_moves):
+        # 如果是完全相同的移動序列，直接返回True
+        if len(self.move_history) >= 2:
+            last_move = self.move_history[-1]
+            if (last_move[0] == 'tableau' and 
+                last_move[1] == dest_pile_idx and 
+                last_move[4] == source_pile_idx):
                 return True
-                
+        
+        # 檢查是否在同一位置反復移動相同的牌
+        if len(self.move_history) >= 4:
+            moves_to_check = self.move_history[-4:]
+            source_positions = [(m[1], m[4]) for m in moves_to_check if m[0] == 'tableau']
+            if len(set(source_positions)) <= 2:  # 如果只涉及1-2個位置
+                return True
+        
+        # 檢查移動是否有實際進展
+        progress = False
+        
+        # 1. 如果移動會翻開新牌
+        if start_idx > 0 and not source_pile[start_idx-1].is_face_up:
+            progress = True
+        
+        # 2. 如果移動能釋放foundation可用的牌
+        cards_to_move = source_pile[start_idx:]
+        if any(self._can_move_to_foundation(card) for card in cards_to_move):
+            progress = True
+        
+        # 3. 如果移動K到空列，但只有在能釋放其他有用牌的情況下
+        if not dest_pile and source_pile[start_idx].rank == 'K':
+            if start_idx > 0:  # 如果K下面還有牌
+                progress = True
+            else:
+                # 檢查是否已經有K在空列
+                empty_piles_with_k = sum(1 for p in self.tableau 
+                                    if not p or (len(p) == 1 and p[0].rank == 'K'))
+                if empty_piles_with_k > 0:
+                    return True  # 已經有K在空列，不需要再移動
+        
+        # 如果沒有實際進展，認為是無意義的移動
+        if not progress:
+            return True
+        
         return False
 
     def _enables_useful_moves(self, cards_to_move, dest_pile):
@@ -1457,43 +1429,45 @@ class SolitaireAI:
 if __name__ == "__main__":
     # 選擇是否使用自定義牌組
     use_custom_deck = True  # 改為False則使用隨機牌組
+    custom_deck = None
 
-    
-    # 定義自定義牌組
-    custom_deck = [
-        # 第一列的牌（從上到下）
-        ('♠', 'Q'),
-        # 第二列的牌
-        ('♣', '7'), ('♣', '6'),
-        # 第三列的牌
-        ('♣', 'J'), ('♥', 'K'), ('♣', 'Q'),
-        # 第四列的牌
-        ('♦', '5'), ('♦', '6'), ('♠', '2'), ('♣', '5'),
-        # 第五列的牌
-        ('♥', '5'), ('♣', '2'), ('♠', '5'), ('♥', '9'), ('♠', 'J'),
-        # 第六列的牌
-        ('♣', 'K'), ('♣', '8'), ('♥', '6'), ('♣', '10'), ('♣', '9'), ('♥', '7'),
-        # 第七列的牌
-        ('♠', '6'), ('♦', '8'), ('♦', '4'), ('♠', '3'), ('♦', '2'), ('♣', '4'), ('♦', 'J'),
-        # stock中的牌（剩餘的牌）            
-        ('♠', '9'), ('♦', '7'), ('♦', 'K'), ('♥', '2'), ('♦', 'Q'),
-        ('♣', '3'), ('♥', '8'), ('♠', '7'), ('♠', 'K'), ('♥', 'Q'),
-        ('♠', '10'), ('♦', 'A'), ('♠', '8'), ('♥', '10'), ('♠', 'A'),
-        ('♦', '9'), ('♥', '3'), ('♥', 'J'), ('♥', 'A'), ('♠', '4'),
-        ('♦', '3'), ('♦', '10'), ('♥', '4'), ('♣', 'A'),
-    ]
-    
+    if use_custom_deck:
+        # 定義自定義牌組
+        custom_deck = [
+            # 第一列的牌（從上到下）
+            ('♠', 'Q'),
+            # 第二列的牌
+            ('♣', '7'), ('♣', '6'),
+            # 第三列的牌
+            ('♣', 'J'), ('♥', 'K'), ('♣', 'Q'),
+            # 第四列的牌
+            ('♦', '5'), ('♦', '6'), ('♠', '2'), ('♣', '5'),
+            # 第五列的牌
+            ('♥', '5'), ('♣', '2'), ('♠', '5'), ('♥', '9'), ('♠', 'J'),
+            # 第六列的牌
+            ('♣', 'K'), ('♣', '8'), ('♥', '6'), ('♣', '10'), ('♣', '9'), ('♥', '7'),
+            # 第七列的牌
+            ('♠', '6'), ('♦', '8'), ('♦', '4'), ('♠', '3'), ('♦', '2'), ('♣', '4'), ('♦', 'J'),
+            # stock中的牌（剩餘的牌）            
+            ('♠', '9'), ('♦', '7'), ('♦', 'K'), ('♥', '2'), ('♦', 'Q'),
+            ('♣', '3'), ('♥', '8'), ('♠', '7'), ('♠', 'K'), ('♥', 'Q'),
+            ('♠', '10'), ('♦', 'A'), ('♠', '8'), ('♥', '10'), ('♠', 'A'),
+            ('♦', '9'), ('♥', '3'), ('♥', 'J'), ('♥', 'A'), ('♠', '4'),
+            ('♦', '3'), ('♦', '10'), ('♥', '4'), ('♣', 'A'),
+        ]
+
     # 創建環境和AI實例
-    env = SolitaireEnv()
+    env = SolitaireEnv()  # 正確初始化環境
     ai = SolitaireAI(custom_deck=custom_deck)
     
     # 重置環境，使用自定義牌組
-    initial_state, _ = env.reset(custom_deck)
+    initial_state = env.reset(custom_deck)
+    
+    # 確保AI的環境也被正確初始化
+    ai.env = env
     
     # 驗證初始狀態
     print("\nInitial Game State:")
-    
-    # 顯示初始狀態
     ai.visualize_game(initial_state)
 
     # 設置保存目錄
@@ -1529,49 +1503,7 @@ if __name__ == "__main__":
         # 保存最終模型
         ai.save_model(os.path.join(save_dir, "final_model.pt"))
         
-        '''# 進行最終評估
-        print("\nFinal Evaluation:")
-        final_eval = ai.evaluate(num_episodes=100)
-        
-        # 保存評估結果
-        with open(f"{save_dir}/evaluation_results.txt", 'w') as f:
-            f.write(f"Final Evaluation Results:\n")
-            for key, value in final_eval.items():
-                f.write(f"{key}: {value}\n")
-        
-        # 繪製訓練進度圖
-        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 8))
-        
-        # 繪製獎勵曲線
-        ax1.plot(rewards)
-        ax1.set_title('Training Progress - Rewards')
-        ax1.set_xlabel('Episode')
-        ax1.set_ylabel('Total Reward')
-        ax1.grid(True)
-        
-        # 繪製移動平均獎勵曲線
-        window_size = 100
-        moving_avg = np.convolve(rewards, np.ones(window_size)/window_size, mode='valid')
-        ax2.plot(range(window_size-1, len(rewards)), moving_avg)
-        ax2.set_title(f'Moving Average Reward (Window Size: {window_size})')
-        ax2.set_xlabel('Episode')
-        ax2.set_ylabel('Average Reward')
-        ax2.grid(True)
-        
-        plt.tight_layout()
-        plt.savefig(os.path.join(save_dir, 'training_progress.png'))
-        plt.close()
-        
-        # 計算並輸出詳細的統計信息
-        print("\nTraining Statistics:")
-        print(f"Total Episodes: {len(rewards)}")
-        print(f"Average Reward: {np.mean(rewards):.2f}")
-        print(f"Standard Deviation: {np.std(rewards):.2f}")
-        print(f"Maximum Reward: {max(rewards):.2f}")
-        print(f"Minimum Reward: {min(rewards):.2f}")
-        print(f"Median Reward: {np.median(rewards):.2f}")
-        print(f"Last 100 Episodes Average: {np.mean(rewards[-100:]):.2f}")'''
-        
     except Exception as e:
         print(f"Training error: {e}")
         raise
+    

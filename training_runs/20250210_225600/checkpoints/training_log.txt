@@ -1,0 +1,49 @@
+Training started at: 2025-02-10 22:56:00.303919
+Training configuration:
+Episodes: 1000
+Checkpoint interval: 50
+Checkpoint directory: training_runs/20250210_225600\checkpoints
+Initial epsilon: 1.0
+Learning rate: 0.0005
+==================================================
+Will record episode 0
+
+Verifying tableau distribution:
+Column 0 (1 cards): ♠Q* 
+Column 1 (2 cards): ♣7 ♣6* 
+Column 2 (3 cards): ♣J ♥K ♣Q* 
+Column 3 (4 cards): ♦5 ♦6 ♠2 ♣5* 
+Column 4 (5 cards): ♥5 ♣2 ♠5 ♥9 ♠J* 
+Column 5 (6 cards): ♣K ♣8 ♥6 ♣10 ♣9 ♥7* 
+Column 6 (7 cards): ♠6 ♦8 ♦4 ♠3 ♦2 ♣4 ♦J* 
+
+Stock (24 cards): ♠9 ♦7 ♦K ♥2 ♦Q ♣3 ♥8 ♠7 ♠K ♥Q ♠10 ♦A ♠8 ♥10 ♠A ♦9 ♥3 ♥J ♥A ♠4 ♦3 ♦10 ♥4 ♣A 
+
+
+Starting recorded episode...
+
+==================================================
+Foundation:
+0: 
+1: 
+2: 
+3: 
+
+--------------------------------------------------
+Tableau:
+0: ♠Q 
+1: 🂠 ♣6 
+2: 🂠 🂠 ♣Q 
+3: 🂠 🂠 🂠 ♣5 
+4: 🂠 🂠 🂠 🂠 ♠J 
+5: 🂠 🂠 🂠 🂠 🂠 ♥7 
+6: 🂠 🂠 🂠 🂠 🂠 🂠 ♦J 
+
+--------------------------------------------------
+Waste: 
+Stock: 24 cards
+==================================================
+
+Target network updated at episode 0
+
+Training Error: _can_move_to_foundation() takes 2 positional arguments but 3 were given

@@ -1,0 +1,4385 @@
+=== Solitaire Game Record ===
+
+Total Moves: 730
+Total Reward: 17.90
+
+Move 1:
+Action: Move card(s) from tableau 6 (position 6) to tableau pile 2
+Reward: 1.00
+Foundation Cards: 0
+Face Up Cards: 8
+--------------------------------------------------
+Move 2:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 0
+Face Up Cards: 8
+--------------------------------------------------
+Move 3:
+Action: Move card(s) from tableau 1 (position 1) to tableau pile 5
+Reward: 1.00
+Foundation Cards: 0
+Face Up Cards: 9
+--------------------------------------------------
+Move 4:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 0
+Face Up Cards: 9
+--------------------------------------------------
+Move 5:
+Action: Draw card from stock to waste
+Reward: 0.70
+Foundation Cards: 0
+Face Up Cards: 9
+--------------------------------------------------
+Move 6:
+Action: Move card from waste to foundation pile 3
+Reward: 2.00
+Foundation Cards: 1
+Face Up Cards: 9
+--------------------------------------------------
+Move 7:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 1
+Face Up Cards: 9
+--------------------------------------------------
+Move 8:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 9
+--------------------------------------------------
+Move 9:
+Action: Move card from waste to tableau pile 3
+Reward: 0.50
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 10:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 11:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 12:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 13:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 14:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 15:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 16:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 17:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 18:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 19:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 20:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 21:
+Action: Draw card from stock to waste
+Reward: 0.50
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 22:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 23:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 24:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 10
+--------------------------------------------------
+Move 25:
+Action: Move card from waste to tableau pile 6
+Reward: 0.50
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 26:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 27:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 28:
+Action: Draw card from stock to waste
+Reward: 0.50
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 29:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 30:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 31:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 32:
+Action: Draw card from stock to waste
+Reward: 0.50
+Foundation Cards: 1
+Face Up Cards: 11
+--------------------------------------------------
+Move 33:
+Action: Move card from waste to foundation pile 2
+Reward: 2.00
+Foundation Cards: 2
+Face Up Cards: 11
+--------------------------------------------------
+Move 34:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 2
+Face Up Cards: 11
+--------------------------------------------------
+Move 35:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 11
+--------------------------------------------------
+Move 36:
+Action: Move card from waste to tableau pile 0
+Reward: 0.50
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 37:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 38:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 39:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 40:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 41:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 42:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 43:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 44:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 45:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 46:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 47:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 48:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 49:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 50:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 51:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 52:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 53:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 54:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 55:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 2
+Face Up Cards: 12
+--------------------------------------------------
+Move 56:
+Action: Move card from waste to tableau pile 4
+Reward: 0.50
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 57:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 58:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 59:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 60:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 61:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 62:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 63:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 64:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 65:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 66:
+Action: Draw card from stock to waste
+Reward: 0.30
+Foundation Cards: 2
+Face Up Cards: 13
+--------------------------------------------------
+Move 67:
+Action: Move card from waste to foundation pile 0
+Reward: 2.00
+Foundation Cards: 3
+Face Up Cards: 13
+--------------------------------------------------
+Move 68:
+Action: Move card(s) from tableau 0 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 13
+--------------------------------------------------
+Move 69:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 13
+--------------------------------------------------
+Move 70:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 3
+Face Up Cards: 13
+--------------------------------------------------
+Move 71:
+Action: Move card from waste to tableau pile 2
+Reward: 0.50
+Foundation Cards: 3
+Face Up Cards: 14
+--------------------------------------------------
+Move 72:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 3
+Face Up Cards: 14
+--------------------------------------------------
+Move 73:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 14
+--------------------------------------------------
+Move 74:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 14
+--------------------------------------------------
+Move 75:
+Action: Move card from waste to tableau pile 0
+Reward: 0.50
+Foundation Cards: 3
+Face Up Cards: 15
+--------------------------------------------------
+Move 76:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 15
+--------------------------------------------------
+Move 77:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 15
+--------------------------------------------------
+Move 78:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 3
+Face Up Cards: 15
+--------------------------------------------------
+Move 79:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 3
+Face Up Cards: 15
+--------------------------------------------------
+Move 80:
+Action: Move card from waste to foundation pile 1
+Reward: 2.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 81:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 82:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 83:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 84:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 85:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 86:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 87:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 88:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 89:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 90:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 91:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 92:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 93:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 94:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 95:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 96:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 97:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 98:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 99:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 100:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 101:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 102:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 103:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 104:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 105:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 106:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 107:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 4
+Face Up Cards: 15
+--------------------------------------------------
+Move 108:
+Action: Move card from waste to tableau pile 2
+Reward: 0.50
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 109:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 110:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 111:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 112:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 113:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 16
+--------------------------------------------------
+Move 114:
+Action: Move card(s) from tableau 5 (position 5) to tableau pile 2
+Reward: 1.00
+Foundation Cards: 4
+Face Up Cards: 17
+--------------------------------------------------
+Move 115:
+Action: Move card(s) from tableau 2 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 17
+--------------------------------------------------
+Move 116:
+Action: Move card(s) from tableau 0 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 17
+--------------------------------------------------
+Move 117:
+Action: Move card(s) from tableau 5 (position 4) to tableau pile 4
+Reward: 1.20
+Foundation Cards: 4
+Face Up Cards: 18
+--------------------------------------------------
+Move 118:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 1.00
+Foundation Cards: 4
+Face Up Cards: 19
+--------------------------------------------------
+Move 119:
+Action: Move card(s) from tableau 2 (position 5) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 19
+--------------------------------------------------
+Move 120:
+Action: Move card(s) from tableau 3 (position 3) to tableau pile 5
+Reward: 1.20
+Foundation Cards: 4
+Face Up Cards: 20
+--------------------------------------------------
+Move 121:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 20
+--------------------------------------------------
+Move 122:
+Action: Move card(s) from tableau 5 (position 2) to tableau pile 1
+Reward: 1.00
+Foundation Cards: 4
+Face Up Cards: 21
+--------------------------------------------------
+Move 123:
+Action: Move card(s) from tableau 2 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 21
+--------------------------------------------------
+Move 124:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 6
+Reward: 1.00
+Foundation Cards: 4
+Face Up Cards: 22
+--------------------------------------------------
+Move 125:
+Action: Move card(s) from tableau 5 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 22
+--------------------------------------------------
+Move 126:
+Action: Move card(s) from tableau 2 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 22
+--------------------------------------------------
+Move 127:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 4
+Face Up Cards: 22
+--------------------------------------------------
+Move 128:
+Action: Move card(s) from tableau 2 (position 5) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 4
+Face Up Cards: 22
+--------------------------------------------------
+Move 129:
+Action: Move card(s) from tableau 6 (position 7) to foundation pile 1
+Reward: 2.00
+Foundation Cards: 5
+Face Up Cards: 21
+--------------------------------------------------
+Move 130:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 5
+Face Up Cards: 21
+--------------------------------------------------
+Move 131:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 21
+--------------------------------------------------
+Move 132:
+Action: Move card(s) from tableau 2 (position 5) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 21
+--------------------------------------------------
+Move 133:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 5
+Face Up Cards: 21
+--------------------------------------------------
+Move 134:
+Action: Move card from waste to tableau pile 4
+Reward: 0.70
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 135:
+Action: Move card(s) from tableau 1 (position 2) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 136:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 137:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 138:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 139:
+Action: Move card(s) from tableau 1 (position 0) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 140:
+Action: Move card(s) from tableau 2 (position 5) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 141:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 142:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 143:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 144:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 145:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 146:
+Action: Move card(s) from tableau 2 (position 5) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 147:
+Action: Move card(s) from tableau 5 (position 2) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 5
+Face Up Cards: 22
+--------------------------------------------------
+Move 148:
+Action: Move card from waste to foundation pile 0
+Reward: 2.00
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 149:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 150:
+Action: Move card(s) from tableau 0 (position 5) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 151:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 152:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 153:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 154:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 6
+Face Up Cards: 22
+--------------------------------------------------
+Move 155:
+Action: Move card from waste to tableau pile 2
+Reward: 0.50
+Foundation Cards: 6
+Face Up Cards: 23
+--------------------------------------------------
+Move 156:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 23
+--------------------------------------------------
+Move 157:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 23
+--------------------------------------------------
+Move 158:
+Action: Move card from waste to tableau pile 1
+Reward: 0.70
+Foundation Cards: 6
+Face Up Cards: 24
+--------------------------------------------------
+Move 159:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 1
+Reward: 1.00
+Foundation Cards: 6
+Face Up Cards: 25
+--------------------------------------------------
+Move 160:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 25
+--------------------------------------------------
+Move 161:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 6
+Face Up Cards: 25
+--------------------------------------------------
+Move 162:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 6
+Face Up Cards: 25
+--------------------------------------------------
+Move 163:
+Action: Move card(s) from tableau 6 (position 6) to foundation pile 0
+Reward: 2.00
+Foundation Cards: 7
+Face Up Cards: 24
+--------------------------------------------------
+Move 164:
+Action: Move card(s) from tableau 1 (position 1) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 7
+Face Up Cards: 24
+--------------------------------------------------
+Move 165:
+Action: Move card(s) from tableau 0 (position 3) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 7
+Face Up Cards: 24
+--------------------------------------------------
+Move 166:
+Action: Move card(s) from tableau 0 (position 0) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 7
+Face Up Cards: 24
+--------------------------------------------------
+Move 167:
+Action: Move card(s) from tableau 2 (position 1) to tableau pile 0
+Reward: 1.00
+Foundation Cards: 7
+Face Up Cards: 25
+--------------------------------------------------
+Move 168:
+Action: Move card(s) from tableau 4 (position 11) to foundation pile 0
+Reward: 2.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 169:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 170:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 171:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 172:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 173:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 174:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 175:
+Action: Move card(s) from tableau 4 (position 5) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 176:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 177:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 178:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 179:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 180:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 181:
+Action: Move card(s) from tableau 2 (position 1) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 182:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 183:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 184:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 185:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 186:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 187:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 188:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 189:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 190:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 191:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 192:
+Action: Move card(s) from tableau 4 (position 5) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 193:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 194:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 195:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 24
+--------------------------------------------------
+Move 196:
+Action: Move card from waste to tableau pile 4
+Reward: 0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 197:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 198:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 199:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 200:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 201:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 202:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 203:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 204:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 205:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 206:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 207:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 208:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 209:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 210:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 211:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 212:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 213:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 214:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 215:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 216:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 217:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 218:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 219:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 220:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 221:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 222:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 223:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 224:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 225:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 226:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 227:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 228:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 229:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 230:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 231:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 232:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 233:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 234:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 235:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 236:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 237:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 238:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 239:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 240:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 241:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 242:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 243:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 244:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 245:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 246:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 247:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 248:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 249:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 250:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 251:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 252:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 253:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 254:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 255:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 256:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 257:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 258:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 259:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 260:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 261:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 262:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 263:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 264:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 265:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 266:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 267:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 268:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 269:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 270:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 271:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 272:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 273:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 274:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 275:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 276:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 277:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 278:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 279:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 280:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 281:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 282:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 283:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 284:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 285:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 286:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 287:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 288:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 289:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 290:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 291:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 292:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 293:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 294:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 295:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 296:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 297:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 298:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 299:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 300:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 301:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 302:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 303:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 304:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 305:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 306:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 307:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 308:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 309:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 310:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 311:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 312:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 313:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 314:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 315:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 316:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 317:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 318:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 319:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 320:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 321:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 322:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 323:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 324:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 325:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 326:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 327:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 328:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 329:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 330:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 331:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 332:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 333:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 334:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 335:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 336:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 337:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 338:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 339:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 340:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 341:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 342:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 343:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 344:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 345:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 346:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 347:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 348:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 349:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 350:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 351:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 352:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 353:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 354:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 355:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 356:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 357:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 358:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 359:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 360:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 361:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 362:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 363:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 364:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 365:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 366:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 367:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 368:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 369:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 370:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 371:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 372:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 373:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 374:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 375:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 376:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 377:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 378:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 379:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 380:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 381:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 382:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 383:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 384:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 385:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 386:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 387:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 388:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 389:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 390:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 391:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 392:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 393:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 394:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 395:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 396:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 397:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 398:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 399:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 400:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 401:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 402:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 403:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 404:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 405:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 406:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 407:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 408:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 409:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 410:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 411:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 412:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 413:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 414:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 415:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 416:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 417:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 418:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 419:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 420:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 421:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 422:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 423:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 424:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 425:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 426:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 427:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 428:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 429:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 430:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 25
+--------------------------------------------------
+Move 431:
+Action: Move card from waste to tableau pile 6
+Reward: 0.50
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 432:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 433:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 434:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 435:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 436:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 437:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 438:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 439:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 440:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 441:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 442:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 443:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 444:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 445:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 446:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 447:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 448:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 449:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 450:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 451:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 452:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 453:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 454:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 455:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 456:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 457:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 458:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 459:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 460:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 461:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 462:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 463:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 464:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 465:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 466:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 467:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 468:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 469:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 470:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 471:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 472:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 473:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 474:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 475:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 476:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 477:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 478:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 479:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 480:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 481:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 482:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 483:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 484:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 485:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 486:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 487:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 488:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 489:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 490:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 491:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 492:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 493:
+Action: Move card(s) from tableau 2 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 494:
+Action: Move card(s) from tableau 4 (position 6) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 495:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 496:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 497:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 498:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 499:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 500:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 501:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 502:
+Action: Draw card from stock to waste
+Reward: 0.10
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 503:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 504:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 505:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 26
+--------------------------------------------------
+Move 506:
+Action: Move card from waste to tableau pile 4
+Reward: 0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 507:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 508:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 509:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 510:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 511:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 512:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 513:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 514:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 515:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 516:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 517:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 518:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 519:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 520:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 521:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 522:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 523:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 524:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 525:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 526:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 527:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 528:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 529:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 530:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 531:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 532:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 533:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 534:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 535:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 536:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 537:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 538:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 539:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 540:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 541:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 542:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 543:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 544:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 545:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 546:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 547:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 548:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 549:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 550:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 551:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 552:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 553:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 554:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 555:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 556:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 557:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 558:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 559:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 560:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 561:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 562:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 563:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 564:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 565:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 566:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 567:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 568:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 569:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 570:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 571:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 572:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 573:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 574:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 575:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 576:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 577:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 578:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 579:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 580:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 581:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 582:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 583:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 584:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 585:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 586:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 587:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 588:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 589:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 590:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 591:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 592:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 593:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 594:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 595:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 596:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 597:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 598:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 599:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 600:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 601:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 602:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 603:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 604:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 605:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 606:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 607:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 608:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 609:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 610:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 611:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 612:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 613:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 614:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 615:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 616:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 617:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 618:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 619:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 620:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 621:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 622:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 623:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 624:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 625:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 626:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 627:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 628:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 629:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 630:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 631:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 632:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 633:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 634:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 635:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 636:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 637:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 638:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 639:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 640:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 641:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 642:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 643:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 644:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 645:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 646:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 647:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 648:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 649:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 650:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 651:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 652:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 653:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 654:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 655:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 656:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 657:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 658:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 659:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 660:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 661:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 662:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 663:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 664:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 665:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 666:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 667:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 668:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 669:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 670:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 671:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 672:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 673:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 674:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 675:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 676:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 677:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 678:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 679:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 680:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 681:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 682:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 683:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 684:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 685:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 686:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 687:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 688:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 689:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 690:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 691:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 692:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 693:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 694:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 695:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 696:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 697:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 698:
+Action: Move card(s) from tableau 4 (position 10) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 699:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 700:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 701:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 702:
+Action: Reset waste to stock
+Reward: -0.50
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 703:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 704:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 705:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 706:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 707:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 708:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 709:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 710:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 711:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 712:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 713:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 714:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 715:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 716:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 717:
+Action: Move card(s) from tableau 1 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 718:
+Action: Move card(s) from tableau 3 (position 2) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 719:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 720:
+Action: Move card(s) from tableau 2 (position 3) to tableau pile 4
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 721:
+Action: Draw card from stock to waste
+Reward: -0.10
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 722:
+Action: Move card(s) from tableau 4 (position 7) to tableau pile 2
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 723:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 724:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 725:
+Action: Move card(s) from tableau 5 (position 3) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 726:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 727:
+Action: Move card(s) from tableau 2 (position 6) to tableau pile 3
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 728:
+Action: Move card(s) from tableau 1 (position 4) to tableau pile 0
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 729:
+Action: Move card(s) from tableau 0 (position 7) to tableau pile 5
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------
+Move 730:
+Action: Move card(s) from tableau 0 (position 4) to tableau pile 1
+Reward: 0.00
+Foundation Cards: 8
+Face Up Cards: 27
+--------------------------------------------------

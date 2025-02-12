@@ -1,0 +1,37 @@
+Training started at: 2025-02-10 23:53:51.382794
+Training configuration:
+Episodes: 1000
+Checkpoint interval: 50
+Checkpoint directory: training_runs/20250210_235351\checkpoints
+Initial epsilon: 1.0
+Learning rate: 0.0005
+==================================================
+Will record episode 0
+
+Starting recorded episode...
+
+==================================================
+Foundation:
+0: 
+1: 
+2: 
+3: 
+
+--------------------------------------------------
+Tableau:
+0: ♠Q 
+1: 🂠 ♣6 
+2: 🂠 🂠 ♣Q 
+3: 🂠 🂠 🂠 ♣5 
+4: 🂠 🂠 🂠 🂠 ♠J 
+5: 🂠 🂠 🂠 🂠 🂠 ♥7 
+6: 🂠 🂠 🂠 🂠 🂠 🂠 ♦J 
+
+--------------------------------------------------
+Waste: 
+Stock: 24 cards
+==================================================
+
+Target network updated at episode 0
+
+Training Error: invalid literal for int() with base 10: 'Q'
