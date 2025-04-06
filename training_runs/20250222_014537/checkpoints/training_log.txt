@@ -1,0 +1,11 @@
+Training started at: 2025-02-22 01:45:37.313938
+Training configuration:
+Episodes: 1000
+Checkpoint interval: 50
+Checkpoint directory: training_runs/20250222_014537\checkpoints
+Initial epsilon: 1.0
+Learning rate: 0.0005
+==================================================
+Target network updated at episode 0
+
+Training Error: 'SolitaireAI' object has no attribute '_is_important_decision'

@@ -10,7 +10,6 @@ import sys
 import datetime
 import copy
 
-# 撲克牌的花色和數字
 SUITS = ['♠', '♥', '♦', '♣']
 RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
@@ -31,7 +30,7 @@ class SolitaireEnv:
         self.tableau = []      # 主要遊戲區域
         self.foundation = []   # 基礎區（用於收集同花色的牌）
         self.stock = []        # 抽牌堆
-        self.waste = []        # 廢牌堆
+        self.waste = []        # 棄牌堆
         self.hidden_cards = {} # 記錄被蓋住的牌
         self.move_history = [] # 移動歷史
         self.moves_without_progress = 0  # 無進展的移動次數
@@ -46,34 +45,35 @@ class SolitaireEnv:
         pass
 
     def _can_move_to_tableau(self, card, dest_pile):
-            """檢查是否可以將牌移動到tableau堆"""
-            if not dest_pile:  # 如果目標堆為空
-                return card.rank == 'K'  # 只有K可以放在空堆
+            '''檢查tableau'''
+            # 檢查K
+            if not dest_pile:  
+                return card.rank == 'K'  
             
             dest_card = dest_pile[-1]
             if not dest_card.is_face_up:
                 return False
                 
-            # 檢查顏色是否相反
+            # 檢查顏色
             card_color = 'red' if card.suit in ['♥', '♦'] else 'black'
             dest_color = 'red' if dest_card.suit in ['♥', '♦'] else 'black'
             
             if card_color == dest_color:
                 return False
                 
-            # 檢查數值是否連續
+            # 檢查數字
             card_value = self._get_card_value(card.rank)
             dest_value = self._get_card_value(dest_card.rank)
             
             return card_value == dest_value - 1
 
     def _can_move_to_foundation(self, card, foundation_pile):
-        """檢查是否可以將牌移動到foundation堆"""
-        if not foundation_pile:  # 如果foundation為空
-            return card.rank == 'A'  # 只有A可以作為foundation的第一張
-        
+        '''檢查foundation'''
+        # 檢查A
+        if not foundation_pile:  
+            return card.rank == 'A'  
+        # 檢查顏色、數字       
         top_card = foundation_pile[-1]
-        # 檢查花色是否相同且數值是否連續
         return (card.suit == top_card.suit and 
                 self._get_card_value(card.rank) == self._get_card_value(top_card.rank) + 1)
 
@@ -151,9 +151,8 @@ class SolitaireEnv:
         # 實現死局檢測邏輯
         # 例如：連續多次沒有新的有效移動
         # 或者發現某些關鍵牌被阻塞等情況
-        pass
+        pass 
     
-    # 在 SolitaireEnv 的 reset 方法中
     def reset(self, custom_deck=None):
         """重置遊戲狀態"""
         # 清空所有區域
@@ -545,7 +544,6 @@ class SolitaireEnv:
         new_state = self._get_state()
         
         return new_state, reward, done
-
 
     def _is_useful_card(self, card):
         """檢查一張牌是否當前有用"""
@@ -1015,19 +1013,28 @@ class SolitaireAI:
         return loss.item()
     
     def train(self, episodes, checkpoint_interval=None, checkpoint_dir=None):
+        """
+        訓練智能體
+        
+        Args:
+            episodes (int): 要訓練的回合數
+            checkpoint_interval (int, optional): 保存檢查點的間隔回合數
+            checkpoint_dir (str, optional): 保存檢查點的目錄路徑
+            
+        Returns:
+            list: 每個回合的獎勵列表
+        """
         # 確保檢查點目錄存在
         if checkpoint_dir:
             os.makedirs(checkpoint_dir, exist_ok=True)
 
-        # 在方法開始處添加日誌設置
+        # 設置日誌文件
         log_file = os.path.join(checkpoint_dir, "training_log.txt") if checkpoint_dir else "training_log.txt"
-
-        # 確保日誌文件的目錄存在
         log_dir = os.path.dirname(log_file)
         if log_dir:
             os.makedirs(log_dir, exist_ok=True)
         
-        # 創建一個日誌記錄器,同時輸出到控制台和文件
+        # 創建日誌記錄器
         class TeeLogger:
             def __init__(self, filename):
                 self.terminal = sys.stdout
@@ -1042,12 +1049,12 @@ class SolitaireAI:
                 self.terminal.flush()
                 self.log.flush()
         
-        # 保存原始的標準輸出
+        # 保存原始的標準輸出並設置新的輸出
         original_stdout = sys.stdout
         sys.stdout = TeeLogger(log_file)
         
         try:
-            # 記錄訓練開始時間和基本信息
+            # 記錄訓練開始信息
             start_time = datetime.datetime.now()
             print(f"Training started at: {start_time}")
             print(f"Training configuration:")
@@ -1057,23 +1064,21 @@ class SolitaireAI:
             print(f"Initial epsilon: {self.epsilon}")
             print(f"Learning rate: {self.learning_rate}")
             print("=" * 50)             
-    
+
+            # 初始化追蹤變量
             best_reward = float('-inf')
             episode_rewards = []
             best_moves = 0
             no_improvement_count = 0
             prev_avg_reward = float('-inf')
             
-            # 創建檢查點目錄
-            if checkpoint_interval and checkpoint_dir:
-                os.makedirs(checkpoint_dir, exist_ok=True)
-
-            # 添加遊戲記錄功能
+            # 設置記錄回合
             record_episode = 0
             print(f"Will record episode {record_episode}")
 
+            # 主訓練循環
             for episode in range(episodes):
-                # 重置環境並獲取初始狀態
+                # 重置環境
                 state = self.env.reset(self.custom_deck)
                 total_reward = 0
                 moves = 0
@@ -1081,13 +1086,14 @@ class SolitaireAI:
                 loss_count = 0
                 last_progress = 0
                 
-                # 當前回合的記錄初始化
+                # 當前回合記錄
                 current_episode_record = []
                 is_recording = (episode == record_episode)
                 
+                # 如果是記錄回合，顯示初始狀態
                 if is_recording:
                     print("\nStarting recorded episode...")
-                    self.visualize_game(state)  # 顯示初始狀態
+                    self.visualize_game(state)
                 
                 # 更新目標網絡
                 if episode % self.target_update == 0:
@@ -1100,16 +1106,18 @@ class SolitaireAI:
                     if episode > 100:
                         if current_avg < prev_avg_reward * 0.95:
                             self.epsilon = min(self.epsilon * 1.1, 0.9)
-                            #print(f"Increasing exploration: epsilon = {self.epsilon:.3f}")
                         else:
                             self.epsilon = max(self.epsilon * 0.995, self.epsilon_min)
                     prev_avg_reward = current_avg
 
+                # 單回合訓練循環
                 while True:
+                    # 選擇動作
                     action = self.act(state)
                     if action is None:  # 沒有有效移動
                         break
                         
+                    # 執行動作
                     next_state, reward, done = self.env.step(action)
                     
                     # 記錄遊戲過程
@@ -1129,6 +1137,7 @@ class SolitaireAI:
                         print(f"Reward: {reward:.2f}")
                         self.visualize_game(next_state)
                     
+                    # 更新計數器和獎勵
                     total_reward += reward
                     moves += 1
                     
@@ -1141,22 +1150,24 @@ class SolitaireAI:
                     # 存儲經驗
                     self.remember(state, action, reward, next_state, done)
                     
-                    # 檢查總經驗數量並進行訓練
+                    # 進行訓練
                     total_memories = len(self.positive_memory) + len(self.negative_memory)
                     if total_memories >= self.batch_size:
                         loss = self.replay(self.batch_size)
                         episode_loss += loss
                         loss_count += 1
-                        self.last_loss = loss  # 更新最後的損失值
+                        self.last_loss = loss
                     
+                    # 更新狀態
                     state = next_state
                     
+                    # 檢查是否結束回合
                     if done:
                         if is_recording:
                             print("\nGame completed!")
                         break
                     
-                    # 動態調整移動限制
+                    # 動態移動限制
                     base_moves = 300
                     extra_moves = foundation_cards * 20
                     tableau_cards = sum(1 for pile in self.env.tableau for card in pile if card.is_face_up)
@@ -1172,12 +1183,12 @@ class SolitaireAI:
                     self._save_game_record(current_episode_record, record_path, total_reward, moves)
                     print(f"\nGame record saved to {record_path}")
                 
-                # episode 結束時更新學習率
+                # 更新學習率
                 if loss_count > 0:
                     avg_loss = episode_loss / loss_count
                     self.scheduler.step()
                 
-                # 記錄並輸出訓練進度
+                # 更新訓練統計
                 episode_rewards.append(total_reward)
                 avg_reward = np.mean(episode_rewards[-100:]) if len(episode_rewards) >= 100 else np.mean(episode_rewards)
                 
@@ -1189,7 +1200,7 @@ class SolitaireAI:
                 else:
                     no_improvement_count += 1
                 
-                # 每10局輸出一次訓練信息
+                # 定期輸出訓練信息
                 if (episode + 1) % 10 == 0:
                     print(f"\nEpisode {episode + 1} Summary:")
                     print(f"Total Reward: {total_reward:.2f}")
@@ -1214,7 +1225,7 @@ class SolitaireAI:
                     print(f"Path: {checkpoint_path}")
                     print("-" * 50)
                 
-                # 提前結束條件
+                # 檢查提前結束條件
                 if len(episode_rewards) >= 100 and avg_reward > 95 and no_improvement_count > 200:
                     print(f"Training completed early at episode {episode + 1}")
                     print(f"Reason: Reached target performance")
@@ -1230,8 +1241,8 @@ class SolitaireAI:
                     self.learning_rate *= 0.5
                     for param_group in self.optimizer.param_groups:
                         param_group['lr'] = self.learning_rate
-                    #print(f"Reducing learning rate to {self.learning_rate}")
             
+            # 訓練結束，輸出總結
             end_time = datetime.datetime.now()
             duration = end_time - start_time
             
@@ -1255,7 +1266,7 @@ class SolitaireAI:
             print("="*50)
             
             return episode_rewards
-    
+
         except Exception as e:
             print(f"\nTraining Error: {str(e)}")
             raise
@@ -1265,6 +1276,9 @@ class SolitaireAI:
     
     def _format_action(self, action):
         """將動作轉換為可讀的字符串"""
+        if not isinstance(action, tuple):
+            return str(action)
+            
         if action[0] == 'stock':
             return "Draw card from stock to waste"
         elif action[0] == 'reset':
@@ -1278,6 +1292,7 @@ class SolitaireAI:
             dest = "tableau" if action[3] == 'tableau' else "foundation"
             dest_pile = action[4]
             return f"Move card(s) from tableau {source_pile} (position {card_index}) to {dest} pile {dest_pile}"
+        return str(action)
 
     def _save_game_record(self, record, filepath, total_reward, total_moves):
         """保存遊戲記錄到文件"""
@@ -1293,6 +1308,27 @@ class SolitaireAI:
                 f.write(f"Foundation Cards: {step['foundation_cards']}\n")
                 f.write(f"Face Up Cards: {step['face_up_cards']}\n")
                 f.write("-" * 50 + "\n")
+
+    def _save_moves_tried(self, moves_tried, checkpoint_dir):
+        """保存已嘗試的移動到文件"""
+        # 使用時間戳來找到最新的資料夾
+        folders = [f for f in os.listdir("training_runs") if os.path.isdir(os.path.join("training_runs", f))]
+        if not folders:
+            return
+        
+        # 按照時間戳排序資料夾
+        latest_folder = max(folders)
+        moves_tried_path = os.path.join("training_runs", latest_folder, "checkpoints", "moves_tried.txt")
+        
+        # 確保目錄存在
+        os.makedirs(os.path.dirname(moves_tried_path), exist_ok=True)
+        
+        # 將moves_tried寫入文件
+        with open(moves_tried_path, 'w', encoding='utf-8') as f:
+            f.write("=== Moves Tried Record ===\n\n")
+            for move in moves_tried:
+                f.write(f"{self._format_action(move)}\n")
+            f.write(f"\nTotal unique moves tried: {len(moves_tried)}\n")
 
     def save_model(self, filepath):
         """保存模型到文件"""
